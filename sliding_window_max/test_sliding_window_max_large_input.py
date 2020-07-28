@@ -21,7 +21,7 @@ class Test(unittest.TestCase):
         answer = sliding_window_max(arr, k)
         end_time = time.time()
         print(end_time - start_time)
-        self.assertTrue((end_time - start_time) < 1) # my cpu time is ~50-60 seconds
+        self.assertTrue((end_time - start_time) < 1) # my cpu time is ~.6-1.4 seconds
         self.assertEqual(answer, expected)
 
 

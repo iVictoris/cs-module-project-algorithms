@@ -26,7 +26,7 @@ def sliding_window_max(nums: list, k):
             # compare current max with newest addition
             if max_value_in_segment < segment[-1]:
                 max_value_in_segment = segment[-1]
-                index_max_value = segment.index(max_value_in_segment)
+                index_max_value = len(segment) - 1
             largest.append(max_value_in_segment)
         else:
         # this should run only once and is set up for max_value
